@@ -9,4 +9,7 @@ RUN yaourt -Syy ; \
  
 WORKDIR /home/eclipse
 USER eclipse
+RUN activator list--templates ; \
+  sbt
+
 CMD ["eclipse"]
