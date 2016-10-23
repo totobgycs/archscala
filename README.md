@@ -8,14 +8,14 @@ At the first run you get the Scala Setup Diagnostic dialog. After completing it 
 Usage:
 
 ```
-$ xhost +si:localuser:eclipse
-$ docker run -d -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix:ro totobgycs/archscala eclipse
+$ xhost +si:localuser:guiuser
+$ docker run -d -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix:ro totobgycs/archscala 
 ```
 
 or
 
 ```
-$ xhost +si:localuser:eclipse
+$ xhost +si:localuser:guiuser
 $ docker run -it -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix:ro totobgycs/archscala /bin/bash
 ```
 
